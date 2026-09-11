@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML generated files
+*.pkl
+*.joblib
+
+# RAG generated files
+*.index
+
+# Logs
+*.log
+
+# Node
+node_modules/
+dist/
+
+# Temporary files
+*.tmp

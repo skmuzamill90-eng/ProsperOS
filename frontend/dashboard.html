@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ProsperOS | Financial Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <h2>🏠 ProsperOS</h2>
+
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="registration.html">
+                        New Registration
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             WELCOME
+        ================================================== -->
+
+        <section class="welcome">
+
+            <h1 id="welcomeName">
+                Welcome
+            </h1>
+
+            <p>
+                AI-Powered Household Financial Sustainability Dashboard
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ML SUMMARY CARDS
+        ================================================== -->
+
+        <section class="score-section">
+
+
+            <!-- Financial Health -->
+
+            <div class="score-card">
+
+                <h2>
+                    Financial Health Score
+                </h2>
+
+                <h1 id="healthScore">
+                    0
+                </h1>
+
+                <p>
+                    Out of 100
+                </p>
+
+            </div>
+
+
+
+            <!-- Risk -->
+
+            <div class="score-card">
+
+                <h2>
+                    Risk Level
+                </h2>
+
+                <h1 id="riskLevel">
+                    -
+                </h1>
+
+                <p>
+                    AI Prediction
+                </p>
+
+            </div>
+
+
+
+            <!-- Monthly Savings -->
+
+            <div class="score-card">
+
+                <h2>
+                    Monthly Savings
+                </h2>
+
+                <h1 id="monthlySavings">
+                    ₹0
+                </h1>
+
+                <p>
+                    Income − Expenses
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             HOUSEHOLD INFORMATION
+        ================================================== -->
+
+        <section class="details">
+
+            <h2>
+                👤 Household Information
+            </h2>
+
+
+            <table>
+
+
+                <tr>
+
+                    <td>
+                        Name
+                    </td>
+
+                    <td id="name">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Age
+                    </td>
+
+                    <td id="age">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Gender
+                    </td>
+
+                    <td id="gender">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Mobile
+                    </td>
+
+                    <td id="mobile">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Family Members
+                    </td>
+
+                    <td id="members">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Occupation
+                    </td>
+
+                    <td id="occupation">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Education
+                    </td>
+
+                    <td id="education">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Location
+                    </td>
+
+                    <td id="location">
+                        -
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINANCIAL SUMMARY
+        ================================================== -->
+
+        <section class="details">
+
+            <h2>
+                💰 Financial Summary
+            </h2>
+
+
+            <table>
+
+
+                <tr>
+
+                    <td>
+                        Monthly Income
+                    </td>
+
+                    <td id="income">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Monthly Expenses
+                    </td>
+
+                    <td id="expenses">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Current Savings
+                    </td>
+
+                    <td id="savings">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Monthly Loan EMI
+                    </td>
+
+                    <td id="loanEmi">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Primary Skill
+                    </td>
+
+                    <td id="skill">
+                        -
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINANCIAL ANALYSIS
+        ================================================== -->
+
+        <section class="details">
+
+            <h2>
+                📊 Financial Analysis
+            </h2>
+
+
+            <table>
+
+
+                <tr>
+
+                    <td>
+                        Saving Rate
+                    </td>
+
+                    <td id="savingRate">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Expense Ratio
+                    </td>
+
+                    <td id="expenseRatio">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        EMI Ratio
+                    </td>
+
+                    <td id="emiRatio">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Remaining Money
+                    </td>
+
+                    <td id="remainingMoney">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Predicted Future Income
+                    </td>
+
+                    <td id="futureIncome">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Predicted Future Expenses
+                    </td>
+
+                    <td id="futureExpense">
+                        -
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+        </section>
+
+
+
+        <!-- =================================================
+             GOVERNMENT SCHEMES
+        ================================================== -->
+
+        <section class="details schemes-section">
+
+
+            <h2>
+                🎁 Government Welfare Schemes
+            </h2>
+
+
+            <p>
+                Find government schemes that may be relevant
+                to your household.
+            </p>
+
+
+            <button
+                id="schemeButton"
+                class="primary-btn">
+
+                🔎 Find Government Schemes
+
+            </button>
+
+
+            <!-- RAG RESULTS -->
+
+            <div
+                id="schemeResults"
+                class="scheme-results">
+
+                <!--
+                    RAG results will appear here.
+                -->
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             AI RECOMMENDATION
+        ================================================== -->
+
+        <section class="recommendation">
+
+            <h2>
+                🤖 AI Financial Recommendation
+            </h2>
+
+
+            <p id="recommendation">
+
+                Recommendation will appear here.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ANALYSIS INFORMATION
+        ================================================== -->
+
+        <section class="details">
+
+            <h2>
+                🔎 Analysis Information
+            </h2>
+
+
+            <table>
+
+
+                <tr>
+
+                    <td>
+                        Analysis Date
+                    </td>
+
+                    <td id="analysisDate">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Model Version
+                    </td>
+
+                    <td id="modelVersion">
+                        -
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACTION BUTTONS
+        ================================================== -->
+
+        <section class="buttons">
+
+
+            <button
+                onclick="window.location.href='registration.html'">
+
+                🏠 Register New Household
+
+            </button>
+
+
+            <button
+                onclick="window.location.href='report.html'">
+
+                📄 Generate Report
+
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 ProsperOS |
+
+            AI-Powered Household Financial Sustainability System
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+<!-- =====================================================
+     PROSPEROS AI CHATBOT
+====================================================== -->
+
+<!-- Markdown support -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+<!-- Floating AI Button -->
+
+<button
+    id="chatbot-button"
+    class="chatbot-button"
+    onclick="toggleChatbot()"
+>
+    🤖
+</button>
+
+
+<!-- Chatbot Window -->
+
+<div
+    id="chatbot-window"
+    class="chatbot-window"
+>
+
+
+    <!-- Chatbot Header -->
+
+    <div class="chatbot-header">
+
+        <div>
+
+            <strong>
+                🤖 ProsperOS AI
+            </strong>
+
+            <small>
+                Government Scheme Assistant
+            </small>
+
+        </div>
+
+
+        <button
+            class="chatbot-close"
+            onclick="toggleChatbot()"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+
+    <!-- Chat Messages -->
+
+    <div
+        id="chat-messages"
+        class="chat-messages"
+    >
+
+        <div class="chat-ai">
+
+            <strong>🤖 ProsperOS AI</strong>
+
+            <p>
+                Hello! 👋 I can help you find
+                potentially relevant government
+                schemes.
+            </p>
+
+            <p>
+                You can ask questions like:
+            </p>
+
+            <ul>
+
+                <li>
+                    I am a carpenter. Which scheme
+                    may help me?
+                </li>
+
+                <li>
+                    I am a street vendor. Is there
+                    any scheme for me?
+                </li>
+
+                <li>
+                    I want financial support for my
+                    small business.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Chat Input -->
+
+    <div class="chat-input-area">
+
+        <input
+            type="text"
+            id="chat-message"
+            placeholder="Ask about government schemes..."
+        >
+
+        <button
+            onclick="sendChatMessage()"
+        >
+            ➤
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<!-- Dashboard JavaScript -->
+<script src="js/dashboard.js"></script>
+
+<!-- Chatbot JavaScript -->
+<script src="js/chatbot.js"></script>
+
+</body>
+</html>
+
+</body>
+
+</html>

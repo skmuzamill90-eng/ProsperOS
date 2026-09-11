@@ -1,0 +1,339 @@
+/* ==========================================
+   ProsperOS - Registration Page
+========================================== */
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+header{
+    background:#2E7D32;
+    color:white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo h2{
+
+    font-size:30px;
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#FFE082;
+
+}
+
+/* ==========================================
+   Registration Section
+========================================== */
+
+.registration{
+
+    width:90%;
+    max-width:900px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.registration h1{
+
+    text-align:center;
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+    font-size:38px;
+
+}
+
+.registration p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   Fieldsets
+========================================== */
+
+fieldset{
+
+    border:2px solid #E0E0E0;
+
+    border-radius:10px;
+
+    padding:25px;
+
+    margin-bottom:30px;
+
+}
+
+legend{
+
+    color:#1565C0;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:0 10px;
+
+}
+
+/* ==========================================
+   Form Layout
+========================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+label{
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#333;
+
+}
+
+input,
+select{
+
+    padding:14px;
+
+    border:1px solid #CCCCCC;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+input:focus,
+select:focus{
+
+    border-color:#1565C0;
+
+    box-shadow:0 0 6px rgba(21,101,192,.3);
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.button-group{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:20px;
+
+}
+
+.primary-btn{
+
+    background:#1565C0;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:#0D47A1;
+
+}
+
+.secondary-btn{
+
+    background:#2E7D32;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#1B5E20;
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+
+    background:#2E7D32;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/* ==========================================
+   Responsive Design
+========================================== */
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.nav-links{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.registration{
+
+    padding:25px;
+
+}
+
+.registration h1{
+
+    font-size:30px;
+
+}
+
+.button-group{
+
+    flex-direction:column;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+}
